@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
             addr = &(ipv4->sin_addr);
             ipver = "IPv4";
         }
-        if (p->ai_family == AF_INET6) { // IPv4
+        if (p->ai_family == AF_INET6) { // IPv6
             struct sockaddr_in6 *ipv6 = (struct sockaddr_in6 *)p->ai_addr;
             addr = &(ipv6->sin6_addr);
             ipver = "IPv6";
